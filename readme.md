@@ -2,7 +2,17 @@
 
 ## 更新记录：
 
+- 2018.03.23
+    - 如果不支持编码或 MediaSource 则自动修改 src 保证视频播放
+
 ## 在线预览：
+
+
+## 仓库地址：
+
+- github : [https://github.com/postbird/PostbirdMp4ToBlob](https://github.com/postbird/PostbirdMp4ToBlob)
+
+- gitosc : [https://gitee.com/postbird/PostbirdMp4ToBlob](https://gitee.com/postbird/PostbirdMp4ToBlob)
 
 ## 使用方法：
 

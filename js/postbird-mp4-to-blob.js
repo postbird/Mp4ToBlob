@@ -5,6 +5,7 @@ var PostbirdMp4ToBlob = {
         if ('MediaSource' in window && MediaSource.isTypeSupported(this.mimeCodec)) {
             
         } else {
+            this.video.src  = assetUrl; // 如果不支持，则直接将 src 修改成原始的url，保证兼容性
             console.error('Unsupported MediaSource or unsupported MIME type or codec: ', this.mimeCodec);
         }
     },

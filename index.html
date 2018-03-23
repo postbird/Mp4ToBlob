@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PostbirdMp4ToBlob</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./js/postbird-mp4-to-blob.js"></script>
+    <script src="./js/postbird-mp4-to-blob.min.js"></script>
     <style>
         *{
             margin:0;
@@ -73,7 +73,7 @@
 <pre>
 var url = './video/v0-new.mp4'; // 视频url
 var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"'; // 编码格式
-PostbirdMp4ToBlob.init('#video',url,mimeCodec); // #video 是选择器
+PostbirdMp4ToBlob.init('#video',url,mimeCodec); // #video 是选择器// false 不自动播放
 </pre>
             </div>
     </div>
@@ -81,6 +81,6 @@ PostbirdMp4ToBlob.init('#video',url,mimeCodec); // #video 是选择器
 <script>
     var url = './video/v0-new.mp4';
     var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"';
-    PostbirdMp4ToBlob.init('#video',url,mimeCodec);
+    PostbirdMp4ToBlob.init('#video',url,mimeCodec,false); 
 </script>
 </html>

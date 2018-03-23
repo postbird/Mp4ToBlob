@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PostbirdMp4ToBlob</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/postbird-mp4-to-blob.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html,body{
+            
+        }
+        video{
+            width:200px;
+        }
+        .video-container{
+            text-align: center;
+        }
+        small{
+            color:#aaaaaa;
+        }
+    </style>    
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container ">
+                <h1>PostbirdMp4ToBlob <small>将 MP4 video 转 blob 的js插件</small></h1>
+                <p>利用 javascript 将 video src 转 blob</p>
+                <p><a class="btn btn- btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="page-header">
+                    <h3>使用插件,加载blob </h3>
+                    <p>审查 video 元素，查看 src</p>
+                </div>
+                <div class="video-container">
+                        <video id="video" webkit-playsinline="true" controls playsinline="true" type="video/mp4"  x5-video-player-type="h5" >
+                        </video>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="page-header">
+                    <h3>未使用插件,直接加载视频 </h3>
+                    <p>审查 video 元素，查看 src</p>
+                </div>
+                <div class="video-container">
+                    <video id="video2" webkit-playsinline="true" controls playsinline="true" type="video/mp4"  x5-video-player-type="h5" src="./video/v0-new.mp4" >
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="page-header">
+            <h3>使用方法：</h3>
+        </div>
+        <div>
+            <h5>1、引入js文件：</h5>
+              <pre>./js/postbird-mp4-to-blob.js</pre>
+        </div>
+        <div>
+                <h5>2、调用插件：</h5>
+<pre>
+var url = './video/v0-new.mp4'; // 视频url
+var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"'; // 编码格式
+PostbirdMp4ToBlob.init('#video',url,mimeCodec); // #video 是选择器
+</pre>
+            </div>
+    </div>
+</body>
+<script>
+    var url = './video/v0-new.mp4';
+    var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"';
+    PostbirdMp4ToBlob.init('#video',url,mimeCodec);
+</script>
+</html>

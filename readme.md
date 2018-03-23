@@ -50,3 +50,18 @@ PostbirdMp4ToBlob.init('#video',url,mimeCodec,false); // 调用 #video 是选择
 - `autoPlay`: 是否自动播放  true | false
 
 
+## 注意事项：
+
+### 1、可能的错误
+
+使用中，如果视频无法播放，并且发现如下错误：
+
+> Failed to execute 'endOfStream' on 'MediaSource': The MediaSource's readyState is not 'open'.
+
+请参考链接：[http://www.ptbird.cn/mediadource-readyState-is-not-open.html](http://www.ptbird.cn/mediadource-readyState-is-not-open.html)
+
+### 2、获取视频的 Codecs 信息
+
+如果要获取视频的 Codecs 信息，请参考链接：[http://www.ptbird.cn/mediadource-readyState-is-not-open.html](http://www.ptbird.cn/mediadource-readyState-is-not-open.html)
+
+一般来说直接使用 `video/mp4; codecs="avc1.640028, mp4a.40.2"` 对 mp4 的视频是没有任何问题的。

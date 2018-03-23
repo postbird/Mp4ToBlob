@@ -1,5 +1,7 @@
 # PostbirdMp4ToBlob
 
+利用 javascript MediaSource 将 HTML video标签的src转成加载blob 
+
 ## 更新记录：
 
 - 2018.03.23
